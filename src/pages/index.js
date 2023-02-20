@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description} data-testid="description">
-          <p class="text-slate-500 hover:text-blue-600">
+          <p className="text-slate-500 hover:text-blue-600">
             Get started by editing&nbsp;
             <code className={styles.code}>src/pages/index.js</code>
           </p>
