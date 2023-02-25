@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <Link href="/api/auth/login">Login</Link>
+        <Link href="/api/auth/logout">Logout</Link>
         <div className={styles.description} data-testid="description">
           <p className="text-slate-500 hover:text-blue-600">
             Get started by modifying&nbsp;
