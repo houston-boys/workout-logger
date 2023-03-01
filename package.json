@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev:client": "next dev",
     "build": "next build",
-    "server": "nodemon server/server.js",
-    "start": "next start",
+    "dev:server": "nodemon server/server.js",
+    "start": "node server/server",
     "lint": "next lint",
     "ci:test": "CI=true jest",
     "prepare": "husky install",
