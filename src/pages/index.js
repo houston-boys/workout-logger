@@ -1,10 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -15,110 +10,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <Link href="/api/auth/login">Login</Link>
-        <Link href="/api/auth/logout">Logout</Link>
-        <div className={styles.description} data-testid="description">
-          <p className="text-slate-500 hover:text-blue-600">
-            Get started by modifying&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
+      <main className="bg-[url('../rodrigo-s-2mz9IKab7DE-unsplash.jpg')] bg-cover bg-center h-screen" data-testid="description">
+        <div className="w-full bg-sky-300 bg-opacity-90">
+          <h1 className="grid h-40 place-items-center text-white text-7xl">Workout Logger</h1>
+        </div>  
+        <div className="flex justify-start bg-black bg-opacity-75 h-10">
+          <Link href="/api/auth/login" className="hover:text-sky-200 text-white mr-6 ml-4 mt-2">Google Login</Link>
+          <div className="hover:text-sky-200 text-white mt-2">Contact</div>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
+        <div className='flex justify-center'>
+          <div className='mt-8 p-3 border-spacing-2 bg-white max-w-xs bg-opacity-70 border rounded-lg'>Welcome to Workout Logger! Once you log-in you will be able to enter multiple training sessions for several workouts (i.e. shoulder press sets, jogging sessions or timed jump rope sessions). Workout Logger will then display your workout history and even visual representations of the data.</div>
         </div>
       </main>
     </>
