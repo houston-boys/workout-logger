@@ -10,7 +10,7 @@
     "lint": "next lint",
     "ci:test": "CI=true jest",
     "prepare": "husky install",
-    "test": "jest --watch"
+    "test": "jest"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^2.2.1",
