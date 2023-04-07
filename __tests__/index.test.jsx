@@ -1,11 +1,16 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import Home from '../src/pages/index'
 import '@testing-library/jest-dom'
+import { UserProvider } from '@auth0/nextjs-auth0/client';
 
-describe('Home', () => {
-  it('renders a description', () => {
-    render(<Home />);
+    it('renders a description', async () => {
+      render(
+        <UserProvider>
+          <Home />
+        </UserProvider>
+      );
 
-    expect(screen.getByTestId("description")).toBeInTheDocument();
-  })
-});
+      await waitFor(() => {
+        expect(screen.getByTestId("description")).toBeInTheDocument();
+      });
+    });

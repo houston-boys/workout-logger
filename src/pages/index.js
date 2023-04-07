@@ -28,8 +28,8 @@ export default function Home() {
           <div className='mt-8 p-3 border-spacing-2 bg-white max-w-xs bg-opacity-70 border rounded-lg'>Welcome to Workout Logger! Once you log-in you will be able to enter multiple training sessions for several workouts (i.e. shoulder press sets, jogging sessions or timed jump rope sessions). Workout Logger will then display your workout history and even visual representations of the data.</div>
         </div>
       </main>
-      <footer class="m-4 dark:bg-gray-800">
-        <span class="flex justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" class="hover:underline">Neoathletics™</a>. All Rights Reserved.</span>
+      <footer className="m-4 dark:bg-gray-800">
+        <span className="flex justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" className="hover:underline">Neoathletics™</a>. All Rights Reserved.</span>
       </footer>
     </>
   )
