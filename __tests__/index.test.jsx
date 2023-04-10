@@ -14,3 +14,4 @@ import { UserProvider } from '@auth0/nextjs-auth0/client';
         expect(screen.getByTestId("description")).toBeInTheDocument();
       });
     });
+    
