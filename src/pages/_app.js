@@ -2,8 +2,10 @@ import '@/styles/globals.css'
 import React from 'react';
 import { UserProvider } from '@auth0/nextjs-auth0/client';
 import Head from 'next/head'
+import Header from '../components/Header'
 
 export default function App({ Component, pageProps }) {
+
   return (
     <UserProvider>
       <Head>
@@ -12,7 +14,10 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <main className="bg-[url('../rodrigo-s-2mz9IKab7DE-unsplash.jpg')] bg-cover bg-center h-screen">
+        <Header />
+        <Component {...pageProps} />
+      </main>
       <footer className="m-4 dark:bg-gray-800">
         <span className="flex justify-center text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" className="hover:underline">Neoathletics™</a>. All Rights Reserved.</span>
       </footer>
